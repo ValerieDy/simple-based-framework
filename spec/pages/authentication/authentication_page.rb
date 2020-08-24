@@ -1,6 +1,6 @@
 module Authentication
   class AuthenticationPage < ::GeneralPage
-    set_url '?controller=authentication&back=my-account'
+    set_url '/index.php?controller=authentication&back=my-account'
 
     element :sign_in_link, 'a.login'
     element :email_field, '#email'

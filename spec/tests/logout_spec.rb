@@ -23,7 +23,9 @@ RSpec.describe "Log out" do
 
       expect(nav_bar).to_not have_logout_link
       expect(nav_bar).to_not have_user_account_link
+      # to check url
       expect(authentication_page).to be_displayed
+      # to check selectors
       expect(authentication_page).to be_all_there
     end
   end
