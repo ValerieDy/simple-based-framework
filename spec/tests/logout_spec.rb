@@ -1,4 +1,4 @@
-RSpec.describe "Log out" do
+RSpec.describe 'Log out' do
   let!(:nav_bar) { Partials::NavBar.new }
   let(:home_page) { Home::HomePage.new }
   let(:authentication_page) { Authentication::AuthenticationPage.new }
