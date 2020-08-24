@@ -5,6 +5,7 @@ ruby '2.6.5'
 
 gem 'pry'
 gem 'ffaker'
+gem 'require_all'
 
 group :test do
   gem 'capybara'
