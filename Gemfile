@@ -4,7 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.5'
 
 gem 'pry'
-gem 'rspec-rails'
 gem 'ffaker'
 
 group :test do
@@ -13,5 +12,7 @@ group :test do
   gem 'factory_bot_rails'
   gem 'site_prism'
   gem 'selenium-webdriver'
+  gem "rspec"
+  gem "rspec_junit_formatter"
 end
 

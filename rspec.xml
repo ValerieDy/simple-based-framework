@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="1" skipped="0" failures="0" errors="0" time="14.091479" timestamp="2020-08-24T15:47:23+03:00" hostname="MacBook-Pro.local">
+<properties>
+<property name="seed" value="6050"/>
+</properties>
+<testcase classname="spec.tests.logout_spec" name="Log out User logs out the account should log out" file="./spec/tests/logout_spec.rb" time="14.089940"></testcase>
+</testsuite>

@@ -74,7 +74,6 @@ GEM
       thor (>= 0.20.3, < 2.0)
     rake (13.0.1)
     regexp_parser (1.7.0)
-    require_all (3.0.0)
     rspec-core (3.9.1)
       rspec-support (~> 3.9.1)
     rspec-expectations (3.9.1)
@@ -121,7 +120,6 @@ DEPENDENCIES
   factory_bot_rails
   ffaker
   pry
-  require_all
   rspec-rails
   selenium-webdriver
   site_prism
