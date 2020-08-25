@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="1" skipped="0" failures="0" errors="0" time="14.554266" timestamp="2020-08-24T16:13:44+03:00" hostname="MacBook-Pro.local">
+<testsuite name="rspec" tests="2" skipped="0" failures="0" errors="0" time="16.027255" timestamp="2020-08-25T08:05:56+03:00" hostname="MacBook-Pro.local">
 <properties>
-<property name="seed" value="24812"/>
+<property name="seed" value="7752"/>
 </properties>
-<testcase classname="spec.tests.logout_spec" name="Log out User logs out the account should log out" file="./spec/tests/logout_spec.rb" time="14.552096"></testcase>
+<testcase classname="spec.tests.logout_spec" name="Log out User logs out the account via navbar should log out" file="./spec/tests/logout_spec.rb" time="10.142710"></testcase>
+<testcase classname="spec.tests.logout_spec" name="Log out User logs out the account via footer should log out" file="./spec/tests/logout_spec.rb" time="5.882302"></testcase>
 </testsuite>

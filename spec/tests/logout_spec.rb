@@ -2,6 +2,7 @@ RSpec.describe 'Log out' do
   let!(:nav_bar) { Partials::NavBar.new }
   let(:home_page) { Home::HomePage.new }
   let(:authentication_page) { Authentication::AuthenticationPage.new }
+  let(:footer) { Partials::Footer.new }
 
   let(:user_data) do
     {
@@ -16,12 +17,28 @@ RSpec.describe 'Log out' do
     authentication_page.login_with(user_data)
   end
 
-  context 'User logs out the account' do
+  context 'User logs out the account via navbar' do
     it 'should log out' do
       expect(nav_bar).to be_nav_bar_for_logged_user_visible
-      nav_bar.logout_link.click
+      nav_bar.sign_out_link.click
 
-      expect(nav_bar).to_not have_logout_link
+      expect(nav_bar).to_not have_sign_out_link
+      expect(nav_bar).to_not have_user_account_link
+      expect(footer).to_not have_sign_out_link
+      # to check url
+      expect(authentication_page).to be_displayed
+      # to check selectors
+      expect(authentication_page).to be_all_there
+    end
+  end
+
+  context 'User logs out the account via footer' do
+    it 'should log out' do
+      expect(nav_bar).to be_nav_bar_for_logged_user_visible
+      footer.sign_out_link.click
+
+      expect(footer).to_not have_sign_out_link
+      expect(nav_bar).to_not have_sign_out_link
       expect(nav_bar).to_not have_user_account_link
       # to check url
       expect(authentication_page).to be_displayed
