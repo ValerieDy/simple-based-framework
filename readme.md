@@ -1,6 +1,9 @@
+[![Build Status](https://travis-ci.com/ValerieDy/simple-based-framework.svg?branch=master)](https://travis-ci.com/github/ValerieDy/simple-based-framework)
+
 # Getting Started
 
 These instructions will get you a copy of the project up for testing purposes.
+Status of build available [here](https://travis-ci.com/github/ValerieDy/simple-based-framework)
 
 ## Installing
 
@@ -14,7 +17,7 @@ Install ruby version manager (​rvm​):
 ```
 Install ruby:
 ```
-rvm install ruby 2.6.5
+rvm install ruby 2.6.3
 ```
 
 Install bundler:

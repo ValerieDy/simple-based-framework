@@ -15,10 +15,19 @@ Dir.glob(File.join(File.dirname(__FILE__), 'pages', '**', '*.rb')).each{|file| r
 logging_preferences = { browser: 'ALL' }
 Capybara.register_driver :chrome do |app|
   capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(loggingPrefs: logging_preferences)
+  options = Selenium::WebDriver::Chrome::Options.new
+  options.add_argument('window-size=1920,1080')
+
+  # Run headless by default unless CHROME_HEADLESS specified
+  options.add_argument('headless') if ENV['CI']
+
+  options.add_argument('disable-gpu')
+
   Capybara::Selenium::Driver.new(
     app,
     browser: :chrome,
-    desired_capabilities: capabilities
+    desired_capabilities: capabilities,
+    options: options
   )
 end
 

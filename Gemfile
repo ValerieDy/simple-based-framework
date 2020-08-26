@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '2.6.3'
 
 gem 'pry'
 gem 'ffaker'
+gem 'require_all'
 
 group :test do
   gem 'capybara'
